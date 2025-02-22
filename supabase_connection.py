@@ -9,9 +9,4 @@ key = os.getenv("SUPABASE_KEY")
 user_id = ""
 
 supabase: Client = create_client(url, key)
-
-def sign_out():
-    """Cerrar sesión en Supabase."""
-    response = supabase.auth.sign_out()
-    return response
     
